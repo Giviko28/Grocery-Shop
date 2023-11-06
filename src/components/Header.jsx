@@ -7,7 +7,6 @@ import profile from '../assets/profile.png'
 
 export const Header = () => {
   return (
-    <div className='p-4'>
       <div className="w-full bg-primary py-6 px-10 rounded-2xl flex justify-between items-center">
         {/* First part */}
         <div className='flex space-x-8 items-center lg:w-7/12 w-full '>
@@ -38,6 +37,5 @@ export const Header = () => {
           </div>
         </div>
       </div>
-    </div>
   )
 }
