@@ -25,5 +25,57 @@
       "quote": "Yummy"
     }
 
+  ],
+
+  "items": [
+    {
+      "name": "Oleina Zeti",
+      "img": "../assets/food1.png",
+      "quote": "Gluten Free",
+      "weight": 500,
+      "nikora": 4.39,
+      "spar": 3.89,
+      "orinabiji": 3.65
+    },
+    {
+      "name": "Santinos rdze",
+      "quote": "Gluten Free",
+      "weight": 1000,
+      "nikora": 3.39,
+      "spar": 3.89,
+      "orinabiji": 2.65
+    },
+    {
+      "name": "Oleina Zeti",
+      "quote": "Gluten Free",
+      "weight": 500,
+      "nikora": 4.39,
+      "spar": 3.89,
+      "orinabiji": 3.65
+    },
+    {
+      "name": "Oleina Zeti",
+      "quote": "Gluten Free",
+      "weight": 500,
+      "nikora": 4.39,
+      "spar": 3.89,
+      "orinabiji": 3.65
+    },
+    {
+      "name": "Oleina Zeti",
+      "quote": "Gluten Free",
+      "weight": 500,
+      "nikora": 4.39,
+      "spar": 3.89,
+      "orinabiji": 3.65
+    },
+    {
+      "name": "Oleina Zeti",
+      "quote": "Gluten Free",
+      "weight": 500,
+      "nikora": 4.39,
+      "spar": 3.89,
+      "orinabiji": 3.65
+    }
   ]
 }

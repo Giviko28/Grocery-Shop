@@ -16,6 +16,9 @@ export default {
       colors: {
         primary: '#064c4f',
         quirkyYellow: '#FAC340',
+        randomOrange: '#B15334',
+        buttonBackground: '#F1F4EB',
+        handleCountBackground: '#BBEA70',
         cta: '#BAE970'
       }
     },

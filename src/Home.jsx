@@ -1,6 +1,7 @@
 import {Header} from "./components/Header.jsx";
 import {Banner} from "./components/Banner.jsx";
 import {CategoriesSlider} from "./components/CategoriesSlider.jsx";
+import {ItemList} from "./components/ItemList.jsx";
 
 export const Home = () => {
   return (
@@ -8,6 +9,7 @@ export const Home = () => {
       <Header/>
       <Banner/>
       <CategoriesSlider/>
+      <ItemList/>
     </div>
   )
 }

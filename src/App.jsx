@@ -1,12 +1,15 @@
 import {BrowserRouter,Routes,Route} from "react-router-dom";
 import {Home} from "./Home.jsx";
+import {CartProvider} from "./context/CartContext.jsx";
 
 function App() {
   return (
     <BrowserRouter>
-      <Routes>
-        <Route path='/' element={<Home/>}/>
-      </Routes>
+      <CartProvider>
+        <Routes>
+          <Route path='/' element={<Home/>}/>
+        </Routes>
+      </CartProvider>
     </BrowserRouter>
   )
 }
