@@ -1,0 +1,29 @@
+{
+  "categories": [
+    {
+      "name": "Vegetable",
+      "quote": "Local Market"
+    },
+    {
+      "name": "Snacks & Bread",
+      "quote": "Made Today"
+    },
+    {
+      "name": "Fruits",
+      "quote": "Chemical Free"
+    },
+    {
+      "name": "Milk & Dairy",
+      "quote": "Processed Food"
+    },
+    {
+      "name": "Frozen Meat",
+      "quote": "Imported Goods"
+    },
+    {
+      "name": "Snacks",
+      "quote": "Yummy"
+    }
+
+  ]
+}

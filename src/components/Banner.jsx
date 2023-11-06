@@ -3,7 +3,7 @@ import mainbanner2 from '../assets/mainbanner2.jpg'
 
 export const Banner = () => {
   return (
-    <div className="mt-4 w-full rounded-2xl h-450" style={{backgroundImage: `url(${mainbanner})`}}>
+    <div className="mt-4 w-full rounded-2xl h-500" style={{backgroundImage: `url(${mainbanner2})`}}>
       <div className='w-1/2 px-16 py-12'>
         <div className='space-y-6 text-white lg:w-500 w-96'>
           <h1 className='text-5xl font-medium'>We bring the store to your door</h1>
