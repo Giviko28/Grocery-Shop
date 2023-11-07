@@ -6,12 +6,13 @@ import testimage from '../assets/food1.png'
 import nikora from '../assets/nikora.jpg'
 import spar from '../assets/spar.png'
 import orinabiji from '../assets/orinabiji.jpg'
+import {GrayLine} from "./GrayLine.jsx";
 
 export const Info = () => {
   const {cart, setCart} = useCartContext();
   const chosenItems = [...new Set(cart)];
   return (
-    <div className='w-1/3'>
+    <div className='w-2/3'>
       {/* top part */}
       <div className='bg-white rounded-2xl p-6 space-y-6'>
         {/* description part */}
@@ -22,6 +23,7 @@ export const Info = () => {
             <p className='font-bold'>Edit</p>
           </div>
         </div>
+        <GrayLine/>
         {/* delivery info part */}
         <div className='flex space-x-4'>
           <img className='h-24 w-24 rounded-2xl' src={map} alt=""/>
@@ -71,6 +73,7 @@ export const Info = () => {
                 {item.nikora}₾
               </div>
             </div>
+            <GrayLine/>
           </div>
           )})}
       </div>
