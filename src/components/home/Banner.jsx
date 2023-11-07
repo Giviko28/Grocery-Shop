@@ -1,5 +1,5 @@
-import mainbanner from '../assets/mainbanner.jpg'
-import mainbanner2 from '../assets/mainbanner2.jpg'
+import mainbanner from '../../assets/mainbanner.jpg'
+import mainbanner2 from '../../assets/mainbanner2.jpg'
 
 export const Banner = () => {
   return (

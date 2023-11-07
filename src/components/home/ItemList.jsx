@@ -1,9 +1,9 @@
-import data from '../data/db.json'
-import testimage from '../assets/food1.png'
-import background from '../assets/card-bg.jpg'
-import {useCartContext} from "../context/CartContext.jsx";
-import {AddToCart} from "./buttons/AddToCart.jsx";
-import {HandleCount} from "./buttons/HandleCount.jsx";
+import data from '../../data/db.json'
+import testimage from '../../assets/food1.png'
+import background from '../../assets/card-bg.jpg'
+import {useCartContext} from "../../context/CartContext.jsx";
+import {AddToCart} from "../buttons/AddToCart.jsx";
+import {HandleCount} from "../buttons/HandleCount.jsx";
 
 export const ItemList = () => {
   const {cart, setCart} = useCartContext();

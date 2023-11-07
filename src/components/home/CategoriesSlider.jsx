@@ -1,4 +1,4 @@
-import data from '../data/db.json'
+import data from '../../data/db.json'
 
 export const CategoriesSlider = () => {
   return (

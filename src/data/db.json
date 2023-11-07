@@ -42,14 +42,22 @@
       "quote": "Gluten Free",
       "weight": 1000,
       "nikora": 3.39,
-      "spar": 3.89,
+      "spar": 1.89,
       "orinabiji": 2.65
     },
     {
       "name": "Oleina Zeti",
       "quote": "Gluten Free",
       "weight": 500,
-      "nikora": 4.39,
+      "nikora": 2.39,
+      "spar": 3.89,
+      "orinabiji": 3.65
+    },
+    {
+      "name": "Oleina Zeti",
+      "quote": "Gluten Free",
+      "weight": 500,
+      "nikora": 3.39,
       "spar": 3.89,
       "orinabiji": 3.65
     },
@@ -66,15 +74,7 @@
       "quote": "Gluten Free",
       "weight": 500,
       "nikora": 4.39,
-      "spar": 3.89,
-      "orinabiji": 3.65
-    },
-    {
-      "name": "Oleina Zeti",
-      "quote": "Gluten Free",
-      "weight": 500,
-      "nikora": 4.39,
-      "spar": 3.89,
+      "spar": 2.89,
       "orinabiji": 3.65
     }
   ]
