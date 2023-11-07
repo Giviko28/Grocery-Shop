@@ -1,6 +1,6 @@
-import {GrayLine} from "./GrayLine.jsx";
+import {GrayLine} from "../GrayLine.jsx";
 import {useState} from "react";
-import {useCartContext} from "../context/CartContext.jsx";
+import {useCartContext} from "../../context/CartContext.jsx";
 
 export const Payment = () => {
   const [isClicked,setIsClicked] = useState([]);
@@ -32,7 +32,7 @@ export const Payment = () => {
   })
 
   return (
-    <div className='bg-white w-3/4 rounded-2xl p-6 '>
+    <div className='bg-white lg:w-3/4 w-11/12 rounded-2xl my-6 lg:my-0 p-6 '>
       <p className='text-2xl text-primary font-bold'>Order Summary</p>
       <GrayLine attribute='my-6'/>
       {/* store prices */}
@@ -75,7 +75,8 @@ export const Payment = () => {
         <p className=''>Total</p>
         <p>{storeTotal[clickedStore] ? '₾ ' + (storeTotal[clickedStore]+3.2)  : 'Choose your store'}</p>
       </div>
-
+      {/* confirmation button(s) */}
+      <button className='bg-handleCountBackground text-primary w-full p-4 rounded-3xl font-bold my-6'>Confirm order</button>
     </div>
   )
 }

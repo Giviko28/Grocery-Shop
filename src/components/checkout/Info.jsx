@@ -1,18 +1,18 @@
-import edit from '../assets/edit.png'
-import map from '../assets/map.png'
-import {useCartContext} from "../context/CartContext.jsx";
-import {HandleCount} from "./buttons/HandleCount.jsx";
-import testimage from '../assets/food1.png'
-import nikora from '../assets/nikora.jpg'
-import spar from '../assets/spar.png'
-import orinabiji from '../assets/orinabiji.jpg'
-import {GrayLine} from "./GrayLine.jsx";
+import edit from '../../assets/edit.png'
+import map from '../../assets/map.png'
+import {useCartContext} from "../../context/CartContext.jsx";
+import {HandleCount} from "../buttons/HandleCount.jsx";
+import testimage from '../../assets/food1.png'
+import nikora from '../../assets/nikora.jpg'
+import spar from '../../assets/spar.png'
+import orinabiji from '../../assets/orinabiji.jpg'
+import {GrayLine} from "../GrayLine.jsx";
 
 export const Info = () => {
   const {cart, setCart} = useCartContext();
   const chosenItems = [...new Set(cart)];
   return (
-    <div className='w-2/3'>
+    <div className='lg:w-9/12 w-11/12'>
       {/* top part */}
       <div className='bg-white rounded-2xl p-6 space-y-6'>
         {/* description part */}
@@ -28,10 +28,10 @@ export const Info = () => {
         <div className='flex space-x-4'>
           <img className='h-24 w-24 rounded-2xl' src={map} alt=""/>
           <div className='space-y-3'>
-            <p className='text-lg text-primary font-bold'>Delivery to</p>
+            <p className='text-xl text-primary font-bold'>Delivery to</p>
             <div>
-              <p className='text-sm text-gray-400 font-light'>Address: +995 598-75-33-55</p>
-              <p className='text-sm text-gray-400 font-light'>Ilia Chavchavadze Street 39, Apartment 17th</p>
+              <p className='text-md text-gray-400 font-light'>Address: +995 598-75-33-55</p>
+              <p className='text-md text-gray-400 font-light'>Ilia Chavchavadze Street 39, Apartment 17th</p>
             </div>
           </div>
         </div>
