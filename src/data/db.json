@@ -5,8 +5,8 @@
       "quote": "Local Market"
     },
     {
-      "name": "Snacks & Bread",
-      "quote": "Made Today"
+      "name": "Snacks",
+      "quote": "As good as it gets"
     },
     {
       "name": "Fruits",
@@ -21,61 +21,66 @@
       "quote": "Imported Goods"
     },
     {
-      "name": "Snacks",
-      "quote": "Yummy"
+      "name": "Ice Cream",
+      "quote": "Don't scream"
     }
 
   ],
-
   "items": [
     {
-      "name": "Oleina Zeti",
+      "id": 1,
+      "name": "Jack Daniels",
       "img": "../assets/food1.png",
-      "quote": "Gluten Free",
-      "weight": 500,
-      "nikora": 4.39,
-      "spar": 3.89,
-      "orinabiji": 3.65
+      "quote": "35% Alc",
+      "weight": 750,
+      "nikora": 67.4,
+      "spar": 70.2,
+      "orinabiji": 65.3
     },
     {
-      "name": "Santinos rdze",
-      "quote": "Gluten Free",
-      "weight": 1000,
+      "id": 2,
+      "name": "Reggia Pasta",
+      "quote": "Italian",
+      "weight": 500,
       "nikora": 3.39,
       "spar": 1.89,
       "orinabiji": 2.65
     },
     {
-      "name": "Oleina Zeti",
-      "quote": "Gluten Free",
-      "weight": 500,
-      "nikora": 2.39,
-      "spar": 3.89,
-      "orinabiji": 3.65
+      "id": 3,
+      "name": "Danzka Vodka",
+      "quote": "30% Alc",
+      "weight": 1000,
+      "nikora": 31.39,
+      "spar": 37.89,
+      "orinabiji": 35.65
     },
     {
-      "name": "Oleina Zeti",
-      "quote": "Gluten Free",
-      "weight": 500,
+      "id": 4,
+      "name": "Doritos Cheese",
+      "quote": "American Snack",
+      "weight": 150,
       "nikora": 3.39,
       "spar": 3.89,
       "orinabiji": 3.65
     },
     {
-      "name": "Oleina Zeti",
-      "quote": "Gluten Free",
+      "id": 5,
+      "name": "Eggs",
+      "quote": "10pc",
       "weight": 500,
       "nikora": 4.39,
       "spar": 3.89,
       "orinabiji": 3.65
     },
     {
-      "name": "Oleina Zeti",
-      "quote": "Gluten Free",
-      "weight": 500,
-      "nikora": 4.39,
-      "spar": 2.89,
-      "orinabiji": 3.65
+      "id": 6,
+      "name": "Sunflower oil",
+      "quote": "Georgian",
+      "weight": 1000,
+      "nikora": 6.39,
+      "spar": 5.19,
+      "orinabiji": 5.65
     }
   ]
 }
