@@ -6,9 +6,14 @@ import nikora from "../../assets/nikora.jpg";
 import { useCartContext } from "../../context/CartContext.jsx";
 import { HandleCount } from "../buttons/HandleCount.jsx";
 import { GrayLine } from "../GrayLine.jsx";
+import { useEffect } from "react";
 
 export const Info = () => {
   const { cart, setCart } = useCartContext();
+  const savedCart = JSON.parse(localStorage.getItem("cart")) ?? [];
+  useEffect(() => {
+    setCart(savedCart);
+  }, []);
   return (
     <div className="lg:w-9/12 w-11/12">
       {/* top part */}
