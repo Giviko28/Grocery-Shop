@@ -2,9 +2,14 @@ import data from "../../data/db.json";
 import { useCartContext } from "../../context/CartContext.jsx";
 import { AddToCart } from "../buttons/AddToCart.jsx";
 import { HandleCount } from "../buttons/HandleCount.jsx";
+import { useEffect } from "react";
 
 export const ItemList = () => {
   const { cart, setCart } = useCartContext();
+  const savedCart = JSON.parse(localStorage.getItem("cart")) ?? [];
+  useEffect(() => {
+    setCart(savedCart);
+  }, []);
   return (
     <div className="py-4">
       <div className="flex justify-between py-4">
@@ -15,7 +20,10 @@ export const ItemList = () => {
       <div className="py-4 grid lg:grid-cols-5 md:grid-cols-3 sm:grid-cols-2 gap-8">
         {data.items &&
           data.items.map((item, id) => (
-            <div className="p-4 text-center bg-white shadow shadow-slate-200 rounded">
+            <div
+              key={item.name}
+              className="p-4 text-center bg-white shadow shadow-slate-200 rounded"
+            >
               <div className="flex justify-center">
                 <img className="h-48" src={`${item.source}`} alt="" />
               </div>
