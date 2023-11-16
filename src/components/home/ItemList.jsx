@@ -1,19 +1,10 @@
-import makaroni from "../../assets/food1.png";
-import jeki from "../../assets/jeki.png";
-import danzka from "../../assets/danzka.png";
-import doritos from "../../assets/doritos.png";
-import koda from "../../assets/koda.jpg";
-import zeti from "../../assets/zeti.jpg";
-import background from "../../assets/card-bg.jpg";
 import data from "../../data/db.json";
 import { useCartContext } from "../../context/CartContext.jsx";
 import { AddToCart } from "../buttons/AddToCart.jsx";
 import { HandleCount } from "../buttons/HandleCount.jsx";
-import { useState } from "react";
 
 export const ItemList = () => {
   const { cart, setCart } = useCartContext();
-  const images = [jeki, makaroni, danzka, doritos, koda, zeti];
   return (
     <div className="py-4">
       <div className="flex justify-between py-4">
@@ -26,7 +17,7 @@ export const ItemList = () => {
           data.items.map((item, id) => (
             <div className="p-4 text-center bg-white shadow shadow-slate-200 rounded">
               <div className="flex justify-center">
-                <img className="h-48" src={images[id]} alt="" />
+                <img className="h-48" src={`${item.source}`} alt="" />
               </div>
               <p className="text-3xl text-primary font-medium line-clamp-1">
                 {item.name}

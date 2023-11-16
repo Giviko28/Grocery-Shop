@@ -1,16 +1,14 @@
 import edit from "../../assets/edit.png";
 import map from "../../assets/map.png";
+import orinabiji from "../../assets/orinabiji.jpg";
+import spar from "../../assets/spar.png";
+import nikora from "../../assets/nikora.jpg";
 import { useCartContext } from "../../context/CartContext.jsx";
 import { HandleCount } from "../buttons/HandleCount.jsx";
-import testimage from "../../assets/food1.png";
-import nikora from "../../assets/nikora.jpg";
-import spar from "../../assets/spar.png";
-import orinabiji from "../../assets/orinabiji.jpg";
 import { GrayLine } from "../GrayLine.jsx";
 
 export const Info = () => {
   const { cart, setCart } = useCartContext();
-  const chosenItems = [...new Set(cart)];
   return (
     <div className="lg:w-9/12 w-11/12">
       {/* top part */}
@@ -44,8 +42,8 @@ export const Info = () => {
       </div>
       <div className="p-6 bg-white mt-6 rounded-2xl">
         <p className="text-3xl text-primary font-bold">Your catalogue</p>
-        {chosenItems &&
-          chosenItems.map((item, id) => {
+        {cart &&
+          cart.map((item, id) => {
             const min = Math.min(item.orinabiji, item.spar, item.nikora);
 
             return (
@@ -53,7 +51,7 @@ export const Info = () => {
                 {/* The actual item */}
                 <div className="flex justify-between py-6">
                   <div className="flex space-x-3">
-                    <img className="h-32" src={testimage} alt="" />
+                    <img className="h-32" src={item.source} alt="" />
                     <div>
                       <p className="text-primary text-xl font-medium">
                         {item.name}

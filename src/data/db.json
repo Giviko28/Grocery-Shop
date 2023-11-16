@@ -2,26 +2,32 @@
   "categories": [
     {
       "name": "Vegetable",
+      "source": "/src/assets/categories/vegetables.png",
       "quote": "Local Market"
     },
     {
       "name": "Snacks",
+      "source": "/src/assets/categories/snack.png",
       "quote": "As good as it gets"
     },
     {
       "name": "Fruits",
+      "source": "/src/assets/categories/fruits.png",
       "quote": "Chemical Free"
     },
     {
       "name": "Milk & Dairy",
+      "source": "/src/assets/categories/milk.png",
       "quote": "Processed Food"
     },
     {
       "name": "Frozen Meat",
+      "source": "/src/assets/categories/frozen.png",
       "quote": "Imported Goods"
     },
     {
       "name": "Ice Cream",
+      "source": "/src/assets/categories/icecream.png",
       "quote": "Don't scream"
     }
 
@@ -30,7 +36,7 @@
     {
       "id": 1,
       "name": "Jack Daniels",
-      "img": "../assets/food1.png",
+      "source": "/src/assets/jeki.png",
       "quote": "35% Alc",
       "weight": 750,
       "nikora": 67.4,
@@ -40,6 +46,7 @@
     {
       "id": 2,
       "name": "Reggia Pasta",
+      "source": "/src/assets/food1.png",
       "quote": "Italian",
       "weight": 500,
       "nikora": 3.39,
@@ -49,6 +56,7 @@
     {
       "id": 3,
       "name": "Danzka Vodka",
+      "source": "/src/assets/danzka.png",
       "quote": "30% Alc",
       "weight": 1000,
       "nikora": 31.39,
@@ -58,6 +66,7 @@
     {
       "id": 4,
       "name": "Doritos Cheese",
+      "source": "/src/assets/doritos.png",
       "quote": "American Snack",
       "weight": 150,
       "nikora": 3.39,
@@ -67,6 +76,7 @@
     {
       "id": 5,
       "name": "Eggs",
+      "source": "/src/assets/koda.jpg",
       "quote": "10pc",
       "weight": 500,
       "nikora": 4.39,
@@ -76,6 +86,7 @@
     {
       "id": 6,
       "name": "Sunflower oil",
+      "source": "/src/assets/zeti.jpg",
       "quote": "Georgian",
       "weight": 1000,
       "nikora": 6.39,
