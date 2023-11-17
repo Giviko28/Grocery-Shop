@@ -39,6 +39,23 @@
       "source": "/src/assets/jeki.png",
       "quote": "35% Alc",
       "weight": 750,
+      "stores": [
+        {
+          "name": "nikora",
+          "price": 67.4,
+          "source": "/src/assets/nikora.jpg"
+        },
+        {
+          "name": "spar",
+          "price": 61.4,
+          "source": "src/assets/spar.png"
+        },
+        {
+          "name": "orinabiji",
+          "price": 63.4,
+          "source": "/src/assets/orinabiji.jpg"
+        }
+      ],
       "nikora": 67.4,
       "spar": 70.2,
       "orinabiji": 65.3
@@ -49,6 +66,23 @@
       "source": "/src/assets/food1.png",
       "quote": "Italian",
       "weight": 500,
+      "stores": [
+        {
+          "name": "nikora",
+          "price": 3.39,
+          "source": "/src/assets/nikora.jpg"
+        },
+        {
+          "name": "spar",
+          "price": 1.89,
+          "source": "src/assets/spar.png"
+        },
+        {
+          "name": "orinabiji",
+          "price": 2.65,
+          "source": "/src/assets/orinabiji.jpg"
+        }
+      ],
       "nikora": 3.39,
       "spar": 1.89,
       "orinabiji": 2.65
@@ -59,6 +93,23 @@
       "source": "/src/assets/danzka.png",
       "quote": "30% Alc",
       "weight": 1000,
+      "stores": [
+        {
+          "name": "nikora",
+          "price": 31.39,
+          "source": "/src/assets/nikora.jpg"
+        },
+        {
+          "name": "spar",
+          "price": 37.89,
+          "source": "src/assets/spar.png"
+        },
+        {
+          "name": "orinabiji",
+          "price": 35.65,
+          "source": "/src/assets/orinabiji.jpg"
+        }
+      ],
       "nikora": 31.39,
       "spar": 37.89,
       "orinabiji": 35.65
@@ -69,6 +120,23 @@
       "source": "/src/assets/doritos.png",
       "quote": "American Snack",
       "weight": 150,
+      "stores": [
+        {
+          "name": "nikora",
+          "price": 3.39,
+          "source": "/src/assets/nikora.jpg"
+        },
+        {
+          "name": "spar",
+          "price": 3.89,
+          "source": "src/assets/spar.png"
+        },
+        {
+          "name": "orinabiji",
+          "price": 3.65,
+          "source": "/src/assets/orinabiji.jpg"
+        }
+      ],
       "nikora": 3.39,
       "spar": 3.89,
       "orinabiji": 3.65
@@ -79,6 +147,23 @@
       "source": "/src/assets/koda.jpg",
       "quote": "10pc",
       "weight": 500,
+      "stores": [
+        {
+          "name": "nikora",
+          "price": 4.39,
+          "source": "/src/assets/nikora.jpg"
+        },
+        {
+          "name": "spar",
+          "price": 3.89,
+          "source": "src/assets/spar.png"
+        },
+        {
+          "name": "orinabiji",
+          "price": 3.65,
+          "source": "/src/assets/orinabiji.jpg"
+        }
+      ],
       "nikora": 4.39,
       "spar": 3.89,
       "orinabiji": 3.65
@@ -89,6 +174,23 @@
       "source": "/src/assets/zeti.jpg",
       "quote": "Georgian",
       "weight": 1000,
+      "stores": [
+        {
+          "name": "nikora",
+          "price": 6.39,
+          "source": "/src/assets/nikora.jpg"
+        },
+        {
+          "name": "spar",
+          "price": 5.19,
+          "source": "src/assets/spar.png"
+        },
+        {
+          "name": "orinabiji",
+          "price": 5.65,
+          "source": "/src/assets/orinabiji.jpg"
+        }
+      ],
       "nikora": 6.39,
       "spar": 5.19,
       "orinabiji": 5.65

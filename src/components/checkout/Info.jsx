@@ -10,6 +10,7 @@ import { useEffect } from "react";
 
 export const Info = () => {
   const { cart, setCart } = useCartContext();
+  // Because of strict mode, I have to save the value of the cart in a variable
   const savedCart = JSON.parse(localStorage.getItem("cart")) ?? [];
   useEffect(() => {
     setCart(savedCart);
