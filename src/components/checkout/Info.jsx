@@ -74,18 +74,13 @@ export const Info = () => {
                 </div>
                 {/* Prices */}
                 <div className="flex justify-around text-primary font-bold">
-                  <div className="flex items-center">
-                    <img className="h-10" src={orinabiji} alt="" />
-                    {item.orinabiji}₾
-                  </div>
-                  <div className="flex items-center">
-                    <img className="h-10" src={spar} alt="" />
-                    {item.spar}₾
-                  </div>
-                  <div className="flex items-center">
-                    <img className="h-10" src={nikora} alt="" />
-                    {item.nikora}₾
-                  </div>
+                  {item.stores &&
+                    item.stores.map((store) => (
+                      <div className="flex items-center">
+                        <img className="h-10" src={store.source} alt="" />
+                        {store.price}₾
+                      </div>
+                    ))}
                 </div>
                 <GrayLine />
               </div>

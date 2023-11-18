@@ -19,6 +19,7 @@ export const Card = ({ item, cart }) => {
   );
 
   const handleClick = () => {
+    // I mean, it looks ugly, but at least the animations work
     if (!isInfo) {
       setAnimate(true);
       setTimeout(() => {
