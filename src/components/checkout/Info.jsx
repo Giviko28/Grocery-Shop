@@ -53,8 +53,8 @@ export const Info = () => {
             const min = Math.min(item.orinabiji, item.spar, item.nikora);
 
             return (
-              <div className="" key={id}>
-                {/* The actual item */}
+              <div className="animate-fade-right" key={id}>
+                {/* The actual item, different from Card Component, i will separate when i have the time */}
                 <div className="flex justify-between py-6">
                   <div className="flex space-x-3">
                     <img className="h-32" src={item.source} alt="" />
