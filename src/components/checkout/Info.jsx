@@ -50,7 +50,7 @@ export const Info = () => {
         <p className="text-3xl text-primary font-bold">Your catalogue</p>
         {cart &&
           cart.map((item, id) => {
-            const min = Math.min(item.orinabiji, item.spar, item.nikora);
+            const min = Math.min(...item.stores.map((store) => store.price));
 
             return (
               <div className="animate-fade-right" key={id}>

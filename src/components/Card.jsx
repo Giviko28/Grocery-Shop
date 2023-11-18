@@ -4,19 +4,46 @@ import { AddToCart } from "./buttons/AddToCart.jsx";
 
 export const Card = ({ item, cart }) => {
   const [isInfo, setIsInfo] = useState(false);
-  const [animate, setAnimate] = useState(true);
+  const [animate, setAnimate] = useState(false);
 
   const cardClass = `p-4 text-center bg-white shadow shadow-slate-200 rounded relative ${
-    animate ? "animate-rotate-y animate-duration-700 animate-ease-in" : ""
+    animate ? "animate-rotate-y animate-duration-500 animate-ease-in" : ""
   }`;
+  const infoClass = `${
+    isInfo ? "" : "hidden"
+  } absolute bg-white w-full h-full inset-0 flex flex-col justify-center items-center overflow-hidden`;
+
   const lowestPrice = Math.min(...item.stores.map((store) => store.price));
   const lowestPriceStore = item.stores.find(
     (store) => store.price === lowestPrice,
   );
 
   const handleClick = () => {
-    setIsInfo((prevInfo) => !prevInfo);
-    setAnimate((prevAnimate) => !prevAnimate);
+    if (!isInfo) {
+      setAnimate(true);
+      setTimeout(() => {
+        setIsInfo(true);
+      }, 300);
+      setTimeout(() => {
+        setAnimate(false);
+      }, 500);
+      return;
+    }
+    setAnimate(true);
+    setTimeout(() => {
+      setIsInfo(false);
+    }, 300);
+    setTimeout(() => {
+      setAnimate(false);
+    }, 500);
+    // if (!isInfo) {
+    //   setIsInfo((prevInfo) => !prevInfo);
+    //   return;
+    // }
+    // setAnimate(true);
+    // setTimeout(() => {
+    //   setIsInfo(false);
+    // }, 1000);
   };
 
   return (
@@ -28,11 +55,7 @@ export const Card = ({ item, cart }) => {
         className="w-6 absolute right-3 top-3 cursor-pointer z-10"
         onClick={handleClick}
       />
-      <div
-        className={`${
-          isInfo ? "" : "hidden"
-        } absolute bg-white w-full h-full inset-0 flex flex-col justify-center items-center overflow-hidden animate-rotate-y animate-duration-500 animate-ease-in`}
-      >
+      <div className={infoClass}>
         {item.stores &&
           item.stores.map((store) => (
             <div className="flex justify-between items-center w-full px-8">
