@@ -5,33 +5,28 @@ import { useCartContext } from "../../context/CartContext.jsx";
 export const Payment = () => {
   const [clicked, setClicked] = useState({});
   const { cart, setCart } = useCartContext();
+
+  const calculateTotal = (storeToCalculate) => {
+    return cart.reduce((sum, item) => {
+      let priceInStore = item.stores.find(
+        (store) => store.name === storeToCalculate,
+      ).price;
+      return sum + priceInStore * item.quantity;
+    }, 0);
+  };
+
   const stores = [
     {
       name: "nikora",
-      total: cart.reduce((sum, item) => {
-        let priceInStore = item.stores.find(
-          (store) => store.name === "nikora",
-        ).price;
-        return sum + priceInStore * item.quantity;
-      }, 0),
+      total: calculateTotal("nikora"),
     },
     {
       name: "spar",
-      total: cart.reduce((sum, item) => {
-        let priceInStore = item.stores.find(
-          (store) => store.name === "spar",
-        ).price;
-        return sum + priceInStore * item.quantity;
-      }, 0),
+      total: calculateTotal("spar"),
     },
     {
       name: "orinabiji",
-      total: cart.reduce((sum, item) => {
-        let priceInStore = item.stores.find(
-          (store) => store.name === "orinabiji",
-        ).price;
-        return sum + priceInStore * item.quantity;
-      }, 0),
+      total: calculateTotal("orinabiji"),
     },
   ];
 
