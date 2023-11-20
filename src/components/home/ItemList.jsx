@@ -21,7 +21,7 @@ export const ItemList = () => {
       <div className="py-4 grid lg:grid-cols-5 md:grid-cols-3 sm:grid-cols-2 gap-8">
         {data.items &&
           data.items.map((item, id) => (
-            <Card key={id} item={item} cart={cart} />
+            <Card key={item.name} item={item} cart={cart} />
           ))}
       </div>
     </div>

@@ -1,8 +1,5 @@
 import edit from "../../assets/edit.png";
 import map from "../../assets/map.png";
-import orinabiji from "../../assets/orinabiji.jpg";
-import spar from "../../assets/spar.png";
-import nikora from "../../assets/nikora.jpg";
 import { useCartContext } from "../../context/CartContext.jsx";
 import { HandleCount } from "../buttons/HandleCount.jsx";
 import { GrayLine } from "../GrayLine.jsx";
@@ -25,14 +22,14 @@ export const Info = () => {
             Delivery information
           </p>
           <div className="flex text-randomOrange">
-            <img className="h-8" src={edit} alt="" />
+            <img className="h-8" src={edit} alt="Edit Icon" />
             <p className="font-bold">Edit</p>
           </div>
         </div>
         <GrayLine />
         {/* delivery info part */}
         <div className="flex space-x-4">
-          <img className="h-24 w-24 rounded-2xl" src={map} alt="" />
+          <img className="h-24 w-24 rounded-2xl" src={map} alt="Map Icon" />
           <div className="space-y-3">
             <p className="text-xl text-primary font-bold">Delivery to</p>
             <div>

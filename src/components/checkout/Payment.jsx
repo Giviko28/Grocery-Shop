@@ -3,10 +3,37 @@ import { useState } from "react";
 import { useCartContext } from "../../context/CartContext.jsx";
 
 export const Payment = () => {
-  const [isClicked, setIsClicked] = useState([]);
+  const [clicked, setClicked] = useState({});
   const { cart, setCart } = useCartContext();
-
-  const stores = ["spar", "orinabiji", "nikora"];
+  const stores = [
+    {
+      name: "nikora",
+      total: cart.reduce((sum, item) => {
+        let priceInStore = item.stores.find(
+          (store) => store.name === "nikora",
+        ).price;
+        return sum + priceInStore * item.quantity;
+      }, 0),
+    },
+    {
+      name: "spar",
+      total: cart.reduce((sum, item) => {
+        let priceInStore = item.stores.find(
+          (store) => store.name === "spar",
+        ).price;
+        return sum + priceInStore * item.quantity;
+      }, 0),
+    },
+    {
+      name: "orinabiji",
+      total: cart.reduce((sum, item) => {
+        let priceInStore = item.stores.find(
+          (store) => store.name === "orinabiji",
+        ).price;
+        return sum + priceInStore * item.quantity;
+      }, 0),
+    },
+  ];
 
   const activeRadio = "accent-randomOrange transform scale-125";
   const inActiveRadio = "accent-gray-400 transform scale-125";
@@ -14,22 +41,8 @@ export const Payment = () => {
   const inActiveRadioLabel = "text-lg text-gray-400 font-light";
 
   const handleClick = (store) => {
-    setIsClicked([]);
-    let clickedStores = [];
-    clickedStores[store] = !clickedStores[store];
-    setIsClicked(clickedStores);
+    setClicked(store);
   };
-
-  const storeTotal = [];
-  const clickedStore = Object.keys(isClicked);
-
-  stores.forEach((store) => {
-    let sum = 0;
-    cart.forEach((item) => {
-      sum += item[store] * item.quantity;
-    });
-    storeTotal[store] = Math.round(sum * 100) / 100;
-  });
 
   return (
     <div className="bg-white lg:w-3/4 w-11/12 rounded-2xl my-6 lg:my-0 p-6 ">
@@ -39,21 +52,26 @@ export const Payment = () => {
       <div className="flex flex-col space-y-2">
         {stores &&
           stores.map((store, index) => (
-            <div id={index} className="flex space-x-2">
+            <div className="flex space-x-2">
               <input
                 onClick={() => handleClick(store)}
-                className={isClicked[store] ? activeRadio : inActiveRadio}
+                className={
+                  clicked.name === store.name ? activeRadio : inActiveRadio
+                }
                 name="store"
                 type="radio"
               />
               <label
                 className={
-                  isClicked[store] ? activeRadioLabel : inActiveRadioLabel
+                  clicked.name === store.name
+                    ? activeRadioLabel
+                    : inActiveRadioLabel
                 }
                 htmlFor="store"
               >
-                {store[0].toUpperCase() + store.slice(1, store.length)}:{" "}
-                {storeTotal[store]}₾
+                {store.name[0].toUpperCase() +
+                  store.name.slice(1, store.name.length)}
+                : {store.total.toFixed(2)}₾
               </label>
             </div>
           ))}
@@ -76,8 +94,8 @@ export const Payment = () => {
         <div className="flex justify-between">
           <p className="text-gray-400">Subtotal</p>
           <p className="text-primary font-bold">
-            {storeTotal[clickedStore]
-              ? "₾ " + storeTotal[clickedStore]
+            {clicked.total
+              ? `₾ ${clicked.total.toFixed(2)}`
               : "Choose your store"}
           </p>
         </div>
@@ -98,8 +116,8 @@ export const Payment = () => {
       <div className="flex justify-between text-2xl text-primary font-bold">
         <p className="">Total</p>
         <p>
-          {storeTotal[clickedStore]
-            ? "₾ " + (storeTotal[clickedStore] + 3.2)
+          {clicked.total
+            ? `₾ ${(clicked.total + 3.2).toFixed(2)}`
             : "Choose your store"}
         </p>
       </div>

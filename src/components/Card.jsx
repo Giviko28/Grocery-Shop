@@ -75,7 +75,7 @@ export const Card = ({ item, cart }) => {
         {item.name}
       </p>
       <p className="text-xl text-primary flex w-full justify-center py-2">
-        Cheapest in:{" "}
+        Cheapest in:
         <img src={lowestPriceStore.source} alt="Store icon" className="h-8" />
       </p>
       <p className="text-gray-400 font-light">{item.weight}g</p>

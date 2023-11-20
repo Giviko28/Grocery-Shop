@@ -55,10 +55,7 @@
           "price": 63.4,
           "source": "/src/assets/orinabiji.jpg"
         }
-      ],
-      "nikora": 67.4,
-      "spar": 70.2,
-      "orinabiji": 65.3
+      ]
     },
     {
       "id": 2,
@@ -82,10 +79,7 @@
           "price": 2.65,
           "source": "/src/assets/orinabiji.jpg"
         }
-      ],
-      "nikora": 3.39,
-      "spar": 1.89,
-      "orinabiji": 2.65
+      ]
     },
     {
       "id": 3,
@@ -109,10 +103,7 @@
           "price": 35.65,
           "source": "/src/assets/orinabiji.jpg"
         }
-      ],
-      "nikora": 31.39,
-      "spar": 37.89,
-      "orinabiji": 35.65
+      ]
     },
     {
       "id": 4,
@@ -136,10 +127,7 @@
           "price": 3.65,
           "source": "/src/assets/orinabiji.jpg"
         }
-      ],
-      "nikora": 3.39,
-      "spar": 3.89,
-      "orinabiji": 3.65
+      ]
     },
     {
       "id": 5,
@@ -163,10 +151,7 @@
           "price": 3.65,
           "source": "/src/assets/orinabiji.jpg"
         }
-      ],
-      "nikora": 4.39,
-      "spar": 3.89,
-      "orinabiji": 3.65
+      ]
     },
     {
       "id": 6,
@@ -190,10 +175,7 @@
           "price": 5.65,
           "source": "/src/assets/orinabiji.jpg"
         }
-      ],
-      "nikora": 6.39,
-      "spar": 5.19,
-      "orinabiji": 5.65
+      ]
     }
   ]
 }
