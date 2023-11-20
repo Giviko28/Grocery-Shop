@@ -6,6 +6,10 @@ export const Payment = () => {
   const [clicked, setClicked] = useState({});
   const { cart, setCart } = useCartContext();
 
+  const deliveryFee = 3.2;
+  const serviceFee = 0.2;
+  const totalFees = deliveryFee + serviceFee;
+
   const calculateTotal = (storeToCalculate) => {
     return cart.reduce((sum, item) => {
       let priceInStore = item.stores.find(
@@ -66,7 +70,7 @@ export const Payment = () => {
               >
                 {store.name[0].toUpperCase() +
                   store.name.slice(1, store.name.length)}
-                : {store.total.toFixed(2)}₾
+                : {store.total.toFixed(1)}₾
               </label>
             </div>
           ))}
@@ -90,21 +94,23 @@ export const Payment = () => {
           <p className="text-gray-400">Subtotal</p>
           <p className="text-primary font-bold">
             {clicked.total
-              ? `₾ ${clicked.total.toFixed(2)}`
+              ? `₾ ${stores
+                  .find((store) => store.name === clicked.name)
+                  .total.toFixed(1)}`
               : "Choose your store"}
           </p>
         </div>
         <div className="flex justify-between">
           <p className="text-gray-400">Delivery Fee</p>
-          <p className="text-primary font-bold">₾ 3.0</p>
+          <p className="text-primary font-bold">₾ {deliveryFee}</p>
         </div>
         <div className="flex justify-between">
           <p className="text-gray-400">Coupon Discount</p>
-          <p className="text-primary font-bold">₾ 0.00</p>
+          <p className="text-primary font-bold">₾ 0.0</p>
         </div>
         <div className="flex justify-between">
           <p className="text-gray-400">Service Fee</p>
-          <p className="text-primary font-bold">₾ 0.20</p>
+          <p className="text-primary font-bold">₾ {serviceFee}</p>
         </div>
       </div>
       <GrayLine />
@@ -112,7 +118,10 @@ export const Payment = () => {
         <p className="">Total</p>
         <p>
           {clicked.total
-            ? `₾ ${(clicked.total + 3.2).toFixed(2)}`
+            ? `₾ ${(
+                stores.find((store) => store.name === clicked.name).total +
+                totalFees
+              ).toFixed(2)}`
             : "Choose your store"}
         </p>
       </div>
