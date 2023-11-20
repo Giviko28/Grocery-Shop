@@ -1,8 +1,15 @@
-# React + Vite
+# Idea and how it works
+I don't really have a name for this app YET, but the idea is somewhat innovative.
+"App Name" allows users to create their grocery list and compare pricess across various stores.  Imagine you have 50 items in your cart, the total might be 250$ in walmart, but 200$ in target. My application's main focus is to help you save money (Why bother overpaying?)
+Even though my website is "Grocery" oriented, it could easily have a separate electronics, furniture section.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## What's next?
 
-Currently, two official plugins are available:
+I'm currently "testing" my product. Do people like my idea? Do they like the design? Is it legally possible to set this up? and much more.
+Therefore, i won't be working on the backend until i get the answer
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# Setup
+Follow these steps in the terminal:
+
+1) NPM install 
+2) NPM run dev
