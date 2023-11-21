@@ -70,7 +70,7 @@ export const Payment = () => {
               >
                 {store.name[0].toUpperCase() +
                   store.name.slice(1, store.name.length)}
-                : {store.total.toFixed(1)}₾
+                : {store.total.toFixed(2)}₾
               </label>
             </div>
           ))}
@@ -96,21 +96,21 @@ export const Payment = () => {
             {clicked.total
               ? `₾ ${stores
                   .find((store) => store.name === clicked.name)
-                  .total.toFixed(1)}`
+                  .total.toFixed(2)}`
               : "Choose your store"}
           </p>
         </div>
         <div className="flex justify-between">
           <p className="text-gray-400">Delivery Fee</p>
-          <p className="text-primary font-bold">₾ {deliveryFee}</p>
+          <p className="text-primary font-bold">₾ {deliveryFee.toFixed(2)}</p>
         </div>
         <div className="flex justify-between">
           <p className="text-gray-400">Coupon Discount</p>
-          <p className="text-primary font-bold">₾ 0.0</p>
+          <p className="text-primary font-bold">₾ 0.00</p>
         </div>
         <div className="flex justify-between">
           <p className="text-gray-400">Service Fee</p>
-          <p className="text-primary font-bold">₾ {serviceFee}</p>
+          <p className="text-primary font-bold">₾ {serviceFee.toFixed(2)}</p>
         </div>
       </div>
       <GrayLine />
