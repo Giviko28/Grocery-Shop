@@ -15,14 +15,18 @@ export const Header = () => {
       <div className="flex space-x-8 items-center lg:w-7/12 w-full ">
         <img className="w-8 h-6" src={menu} alt="Menu Logo" />
         <Link to="/">
-          <img className="w-64 lg:block hidden" src={logo} alt="Main Logo" />
+          <img
+            className="w-full h-[36px] lg:block sm:hidden"
+            src={logo}
+            alt="Main Logo"
+          />
         </Link>
-        <div className="w-full">
+        <div className="w-full sm:block hidden">
           <div className="relative w-11/12">
             <input
               className="w-full py-2 px-4 rounded-3xl placeholder-gray-500"
               type="text"
-              placeholder="Search for Grocery, Stores, Vegetable, and Meat"
+              placeholder="Search"
             />
             <img
               className="w-6 h-6 absolute top-1/2 transform -translate-y-1/2 right-4"
@@ -41,8 +45,8 @@ export const Header = () => {
           <p className="text-quirkyYellow">15 mins!</p>
         </div>
         {/* shopping cart */}
-        <div className="px-2 relative">
-          <div className="bg-white rounded-3xl p-1.5 relative">
+        <div className="px-2  relative">
+          <div className="bg-white rounded-3xl p-1.5 relative h-10 w-10">
             <Link to="/checkout">
               <img className="" src={cartLogo} alt="Cart logo" />
             </Link>
@@ -52,7 +56,7 @@ export const Header = () => {
           </div>
         </div>
         {/* profile logo */}
-        <div className="bg-white p-1.5 rounded-3xl border-dotted ">
+        <div className="bg-white p-1.5 rounded-3xl border-dotted h-10 w-10">
           <img src={profile} alt="Profile logo" />
         </div>
       </div>
