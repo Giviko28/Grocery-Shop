@@ -24,7 +24,7 @@ export const Banner = () => {
         </div>
       </div>
       {/* Image side */}
-      <div className="m-0 m-auto lg:block hidden">
+      <div className="m-auto lg:block hidden">
         <img src={bannerIcon} alt="Banner Icon" />
       </div>
     </div>

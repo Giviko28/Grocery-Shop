@@ -6,11 +6,11 @@ import { Popup } from "../components/layout/Popup.jsx";
 import { useState } from "react";
 
 export const Home = () => {
-  const [isPopup, setIsPopup] = useState(
+  const [isPopupClicked, setIsPopupClicked] = useState(
     localStorage.getItem("isClicked") ?? false,
   );
   const parentClass = `sm:py-3 sm:px-8 bg-gray-100 ${
-    !isPopup ? "blur-md" : ""
+    !isPopupClicked ? "blur-md" : ""
   }`;
 
   return (
@@ -23,7 +23,10 @@ export const Home = () => {
           <ItemList />
         </div>
       </div>
-      <Popup isPopup={isPopup} setIsPopup={setIsPopup} />
+      <Popup
+        isPopupClicked={isPopupClicked}
+        setIsPopupClicked={setIsPopupClicked}
+      />
     </>
   );
 };

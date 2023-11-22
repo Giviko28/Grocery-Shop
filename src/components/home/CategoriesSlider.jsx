@@ -2,7 +2,7 @@ import data from "../../data/db.json";
 
 export const CategoriesSlider = () => {
   return (
-    <div className="grid lg:grid-cols-6 md:grid-cols-3 sm:grid-cols-2 py-6 gap-4">
+    <div className="grid xl:grid-cols-6 lg:grid-cols-3 sm:grid-cols-2 py-6 gap-4">
       {data.categories &&
         data.categories.map((category, id) => (
           <div

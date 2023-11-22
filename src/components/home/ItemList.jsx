@@ -18,7 +18,7 @@ export const ItemList = () => {
         <p className="text-randomOrange text-xl font-medium">See more -></p>
       </div>
       {/* actual items */}
-      <div className="py-4 grid lg:grid-cols-5 md:grid-cols-3 sm:grid-cols-2 gap-8">
+      <div className="py-4 grid xl:grid-cols-5 md:grid-cols-3 sm:grid-cols-2 gap-8">
         {data.items &&
           data.items.map((item, id) => (
             <Card key={item.name} item={item} cart={cart} />
