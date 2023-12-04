@@ -9,7 +9,7 @@ I'm currently "testing" my product. Do people like my idea? Do they like the des
 Therefore, i won't be working on the backend until i get the answer.
 
 # Setup
-Follow these steps in the terminal:
+Follow these steps in the terminal (make sure to cd in the main directory):
 
 1) NPM install 
 2) NPM run dev
